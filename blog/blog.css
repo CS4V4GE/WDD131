@@ -16,6 +16,7 @@ a {
   text-decoration: none;
   color: #AF1B3F;
 }
+
 .skiptocontent a {
   position: absolute;
   top: -40px;
@@ -25,9 +26,11 @@ a {
   padding: 8px;
   z-index: 100;
 }
+
 .skiptocontent a:focus {
   top: 0;
 }
+
 header {
   text-align: center;
   padding: 1rem 0;
@@ -76,6 +79,9 @@ main {
   border-bottom: 1px solid #EFC69B;
   padding-bottom: 1rem;
   margin-bottom: 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
 }
 
 .details {
@@ -90,16 +96,37 @@ main {
   max-width: 200px;
   display: block;
   margin-top: 0.5rem;
+  border-radius: 5px;
 }
 
 .filters {
   background: rgb(179, 103, 100);
   padding: 1rem;
   border: 1px solid #EFC69B;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  height: fit-content;
 }
+
 footer {
   text-align: center;
   padding: 1rem;
   background-color: tan;
   margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  .articles article {
+    grid-template-columns: 1fr;
+  }
+
+  nav ul {
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+  }
 }
