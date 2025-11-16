@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Recipe Book | Tasty Home Recipes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse simple, delicious recipes in this responsive recipe book. Search by name or ingredient and find your next favorite meal.">
+  <meta name="author" content="Your Name">
+  <link rel="icon" type="image/png" href="images/recipe-book.png">
+
+  <meta property="og:title" content="Recipe Book | Tasty Home Recipes">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="Browse simple, delicious recipes in this responsive recipe book. Search by name or ingredient and find your next favorite meal.">
+  <meta property="og:image" content="https://yourgithubusername.github.io/wdd131/recipes/images/recipe-book.png">
+  <meta property="og:url" content="https://yourgithubusername.github.io/wdd131/recipes/">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="stylesheet" href="recipes.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="images/recipe-book.png" alt="Recipe book logo">
+      <div class="brand-text">
+        <p class="tagline">Simple and delicious</p>
+        <h1>Recipe Book</h1>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="search-section" aria-label="Recipe search">
+      <h2>Find a recipe</h2>
+      <form id="searchForm">
+        <label for="searchInput">Search by name or ingredient</label>
+        <div class="search-row">
+          <input id="searchInput" name="search" type="search" placeholder="e.g. pasta, chicken, salad">
+          <button type="submit">Search</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="recipes-section" aria-label="Recipes">
+      <h2>Featured recipes</h2>
+      <div id="recipesGrid" class="recipes-grid">
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="social">
+      <a href="#" aria-label="Visit our Instagram">
+        <img src="images/instagram_icon.svg" alt="Instagram icon">
+      </a>
+      <a href="#" aria-label="Visit our YouTube">
+        <img src="images/youtube_icon.svg" alt="YouTube icon">
+      </a>
+      <a href="#" aria-label="Visit our Pinterest">
+        <img src="images/pinterest_icon.svg" alt="Pinterest icon">
+      </a>
+    </div>
+
+    <p class="attribution">
+      <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a>
+    </p>
+  </footer>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
