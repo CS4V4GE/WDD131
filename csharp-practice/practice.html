@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Practice • C# Learning Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+  <script type="module" src="scripts/quiz.js"></script>
+  <link rel="icon"  href="images/favicon.png">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">C#</span>
+        <span class="brand-text">Learning Hub</span>
+      </a>
+
+      <nav class="nav">
+        <a class="nav-link" href="index.html#tasks">Tasks</a>
+        <a class="nav-link" href="practice.html">Practice</a>
+        <a class="nav-link" href="index.html#progress">Progress</a>
+        <a class="nav-cta" href="index.html">Home</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <div class="container quiz-shell">
+        <p class="hero-tagline">Practice</p>
+        <h1 class="hero-title">C# Quiz</h1>
+        <p class="hero-subtitle">Test your understanding of C# fundamentals.</p>
+
+        <div class="quiz-card">
+          <div class="quiz-meta">
+            <span id="quizCounter"></span>
+            <span id="quizScore"></span>
+          </div>
+
+          <div class="quiz-progress">
+            <div class="progress-bar">
+              <div class="progress-bar-fill" id="quizProgressFill"></div>
+            </div>
+          </div>
+
+          <h2 class="quiz-question" id="questionText"></h2>
+
+          <form id="quizForm">
+            <div class="quiz-options" id="optionsWrap"></div>
+
+            <div class="quiz-actions">
+              <button class="btn btn-primary" type="submit">Check Answer</button>
+              <button class="btn btn-ghost" type="button" id="nextBtn" disabled>Next</button>
+            </div>
+
+            <p class="quiz-feedback" id="feedback"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <div>© <span id="year"></span> Your Website</div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>C# Learning Hub</title>
+  <meta name="description" content="Track C# topics, practice quick quizzes, and build consistent progress." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css" />
+  <script type="module" src="scripts/main.js"></script>
+  <link rel="icon"  href="images/favicon.png">
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="C# Learning Hub home">
+        <span class="brand-mark" aria-hidden="true">C#</span>
+        <span class="brand-text">Learning Hub</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a class="nav-link" href="#tasks">Tasks</a>
+        <a class="nav-link" href="practice.html">Practice</a>
+        <a class="nav-link" href="#progress">Progress</a>
+        <a class="nav-link" href="#footer">Links</a>
+        <a class="nav-cta" href="practice.html">Start</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-inner">
+        <p class="hero-tagline">Tagline</p>
+        <h1 class="hero-title">Learn C# with focused tasks and quick practice.</h1>
+        <p class="hero-subtitle">
+          Pick a few topics each day, mark your progress, and test yourself with short questions.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#tasks">Today’s Tasks</a>
+          <a class="btn btn-ghost" href="practice.html">Practice Quiz</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="progress" aria-labelledby="progress-heading">
+      <div class="container">
+        <div class="progress-card">
+          <div class="progress-top">
+            <h2 id="progress-heading" class="section-title">Progress</h2>
+            <div class="progress-metrics" id="progressText">Loading…</div>
+          </div>
+          <div class="progress-bar" role="progressbar" aria-label="Topic progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+            <div class="progress-bar-fill" id="progressFill"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="tasks" aria-labelledby="tasks-heading">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="tasks-heading" class="section-title">Tasks of the day</h2>
+
+          <div class="controls" aria-label="Topic filters and actions">
+            <label class="control">
+              <span class="control-label">Difficulty</span>
+              <select id="difficultySelect" class="control-input">
+                <option value="all">All</option>
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+              </select>
+            </label>
+
+            <label class="control">
+              <span class="control-label">Category</span>
+              <select id="categorySelect" class="control-input">
+                <option value="all">All</option>
+              </select>
+            </label>
+
+            <button class="btn btn-small" id="shuffleBtn" type="button">Shuffle</button>
+          </div>
+        </div>
+
+        <div class="grid" id="topicGrid" aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
+
+<footer class="site-footer">
+  <div class="container footer-bottom">
+    <div>© <span id="year"></span> Christopher Savage 2025</div>
+    <div class="footer-legal">
+      <a href="index.html" class="footer-link-inline">Home</a>
+      <a href="practice.html" class="footer-link-inline">Practice</a>
+      <a href="site-plan.html" class="footer-link-inline">Site Plan</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
